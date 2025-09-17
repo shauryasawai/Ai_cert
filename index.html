@@ -350,6 +350,11 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -406,6 +411,25 @@
         <div class="header">
             <h1>PROJECT FINISH LINE</h1>
             <div class="subtitle">Transform our platform from a content library into a habit-forming learning companion that drives completion and lifelong engagement</div>
+            
+            <!-- Author Introduction -->
+            <div style="margin-top: 40px; padding: 25px; background: rgba(255, 255, 255, 0.1); border-radius: 15px; backdrop-filter: blur(10px);">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <h3 style="color: #f093fb; font-size: 1.5rem; margin-bottom: 8px; font-weight: 600;">Made by</h3>
+                        <h2 style="color: #ffffff; font-size: 2rem; margin-bottom: 5px; font-weight: 700;">Shauryaman Sawai</h2>
+                        <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; font-weight: 500;">Pre-final year student</p>
+                        <p style="color: #f8f8f9; font-size: 1.2rem; font-weight: 600; margin-top: 5px;">National Institute of Technology, Rourkela</p>
+                    </div>
+                </div>
+                
+                <!-- Decorative elements -->
+                <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+                    <div style="width: 8px; height: 8px; background: #667eea; border-radius: 50%; animation: pulse 2s infinite;"></div>
+                    <div style="width: 8px; height: 8px; background: #f093fb; border-radius: 50%; animation: pulse 2s infinite 0.5s;"></div>
+                    <div style="width: 8px; height: 8px; background: #667eea; border-radius: 50%; animation: pulse 2s infinite 1s;"></div>
+                </div>
+            </div>
         </div>
 
         <!-- Problem Discovery Section -->
